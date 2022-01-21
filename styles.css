@@ -7,6 +7,7 @@
     --clr-text-400: #a4ac86;
     background-color: #656d4a;
     font-family: 'Oswald', sans-serif;
+    color: white;
 }
 
 
@@ -37,13 +38,14 @@
     padding: 16px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: var(--clr-text-300);
+    gap: 8px;
 }
 .flex-one,
 .flex-two {
-    width: auto;
-    height: 25px;
+    flex: 1;
 }
 
 
