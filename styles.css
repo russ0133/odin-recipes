@@ -9,21 +9,45 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.title {
-    padding: 20px;
+
+/* containers */
+
+.container-title {
+    padding: 10px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 40px;
     color: white;
     background-color: var(--clr-text-300);
 }
+.container-title .title {
+    margin: 0px;
+    font-size: 80px;
+}
+.container-title .subtitle {
+    font-size: 16px;
+    font-weight: 300;
+}
 
-.container {
-    font-size: 20px;
-    padding-left: 50px;
+
+/* flex containers */
+
+.flex-container {
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
     background-color: var(--clr-text-300);
 }
+.flex-one,
+.flex-two {
+    width: auto;
+    height: 25px;
+}
+
+
+/* visited link */
 
 a:link, a:visited {
     background-color: var(--clr-text-100);
