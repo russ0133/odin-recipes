@@ -5,6 +5,8 @@
     --clr-text-200: #656d4a;
     --clr-text-300: #414833;
     --clr-text-400: #a4ac86;
+    --clr-text-500: white;
+    --clr-text-600: white;
     background-color: #656d4a;
     font-family: 'Oswald', sans-serif;
     color: white;
@@ -13,22 +15,33 @@
 
 /* containers */
 
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
 .container-title {
+    display:flex;
     padding: 10px;
     text-align: center;
+    align-items: center;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 40px;
     color: white;
     background-color: var(--clr-text-300);
 }
-.container-title .title {
+.container-title h1 {
     margin: 0px;
+    flex: 2;
     font-size: 80px;
 }
-.container-title .subtitle {
+.container-title div {
     font-size: 16px;
+    flex: 1;
     font-weight: 300;
+    align-self:flex-end;
 }
 
 
@@ -38,14 +51,15 @@
     padding: 16px;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: var(--clr-text-300);
     gap: 8px;
 }
 .flex-one,
 .flex-two {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 
